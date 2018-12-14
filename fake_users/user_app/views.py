@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from user_app import User
+from user_app.models import User
 
 def index(request):
     return render(request, 'user_app/index.html',)
