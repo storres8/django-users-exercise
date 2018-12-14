@@ -6,4 +6,4 @@ class User(models.Model):
     email = models.EmailField(max_length = 264, unique = True)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}'s email is {self.email}"
+        return f"{self.first_name} {self.last_name}: {self.email}"
