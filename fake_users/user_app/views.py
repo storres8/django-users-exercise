@@ -24,7 +24,5 @@ def form_name(request):
             print(f"Name: {form.cleaned_data['name']}")
             print(f"Email: {form.cleaned_data['email']}")
             print(f"Text: {form.cleaned_data['text']}")
-        else:
-            # do nothing, just leave the form unbound
-            form.FormName()
+
     return render(request, 'user_app/form.html', {'form': form})
